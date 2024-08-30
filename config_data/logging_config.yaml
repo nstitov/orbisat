@@ -1,0 +1,109 @@
+version: 1
+disable_existing_loggers: False
+
+
+formatters:
+  default_formatter:
+    format: "[{asctime}] #{levelname:8} {filename}:{lineno} - {name} - {message}"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+    style: "{"
+
+
+filters:
+  info_filter:
+    (): new_orbitron.info_logger.logging_services.custom_filters.InfoLogFilter
+
+
+handlers:
+  info_console_handler:
+    class: logging.StreamHandler
+    formatter: default_formatter
+    level: INFO
+    stream: "ext://sys.stdout"
+
+  error_console_handler:
+    class: logging.StreamHandler
+    formatter: default_formatter
+    level: WARNING
+    stream: "ext://sys.stderr"
+
+  info_file_handler:
+    class: new_orbitron.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
+    formatter: default_formatter
+    level: INFO
+    filename: Logs/orbitron_info.log
+    when: midnight
+    utc: False
+    backupCount: 365
+    filters: [info_filter]
+
+  error_file_handler:
+    class: logging.FileHandler
+    formatter: default_formatter
+    level: WARNING
+    filename: Logs/orbitron_errors.log
+    mode: a
+
+  orbitron_gui_info_file_handler:
+    class: new_orbitron.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
+    formatter: default_formatter
+    level: DEBUG
+    filename: Logs/orbitron_gui_info.log
+    when: midnight
+    utc: False
+    backupCount: 365
+    filters: [info_filter]
+
+  orbitron_gui_error_file_handler:
+    class: logging.FileHandler
+    formatter: default_formatter
+    level: WARNING
+    filename: Logs/orbitron_gui_errors.log
+    mode: a
+
+
+
+loggers:
+  new_orbitron.orbitron_main.orbitron:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.tcp.TcpServerABC:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.tcp.orbitron_tcp_server:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.tcp.orbitron_tcp_client:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.orbitron_services.satellite:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.orbitron_services.ground_station:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.orbitron_services.communication:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  new_orbitron.orbitron_gui.gui_main_full:
+    level: DEBUG
+    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+
+  new_orbitron.orbitron_gui.gui_main_short:
+    level: DEBUG
+    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+
+  new_orbitron.orbitron_gui.gui_station_setup:
+    level: DEBUG
+    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+
+  new_orbitron.orbitron_gui.gui_choose_station:
+    level: DEBUG
+    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]

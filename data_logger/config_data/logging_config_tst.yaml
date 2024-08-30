@@ -1,0 +1,159 @@
+version: 1
+disable_existing_loggers: True
+
+formatters:
+  default_formatter:
+    format: "[{asctime}] #{levelname:8} {filename}:{lineno} - {name} - {message}"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+    style: "{"
+
+  info_formatter:
+    format: "[{asctime}] #{levelname:8} - {message}"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+    style: "{"
+
+  influxdb_data_formatter:
+    (): mcc_logger.config_data.logging_services.InfluxdbDataFormatter
+
+  file_data_fomatter:
+    (): mcc_logger.config_data.logging_services.FileDataFormatter
+
+  nodata_formatter:
+    (): mcc_logger.config_data.logging_services.NoDataFormatter
+
+
+
+filters:
+  logdata_filter:
+    (): mcc_logger.config_data.logging_services.LogDataFilter
+
+  info_filter:
+    (): mcc_logger.config_data.logging_services.InfoLogFilter
+
+  nodata_filter:
+    (): mcc_logger.config_data.logging_services.NoDataFilter
+
+  error_filter:
+    (): mcc_logger.config_data.logging_services.ErrorFilter
+
+
+
+handlers:
+  default_handler:
+    class: logging.StreamHandler
+    formatter: default_formatter
+    level: WARNING
+    stream: "ext://sys.stdout"
+
+  logdata_console_handler:
+    class: logging.StreamHandler
+    formatter: file_data_fomatter
+    level: INFO
+    stream: "ext://sys.stdout"
+    filters: [logdata_filter]
+
+  logdata_file_handler:
+    class: mcc_logger.config_data.logging_services.LogDataFileHandler
+    formatter: file_data_fomatter
+    level: INFO
+    filename: Logs/data.log
+    when: midnight
+    utc: False
+    backupCount: 365
+    filters: [logdata_filter]
+
+  logdata_influxdb_handler:
+    class: mcc_logger.config_data.logging_services.InfluxdbDataHandler
+    formatter: influxdb_data_formatter
+    level: INFO
+    filters: [logdata_filter]
+
+  info_console_handler:
+    class: logging.StreamHandler
+    formatter: info_formatter
+    level: INFO
+    stream: "ext://sys.stdout"
+    filters: [info_filter]
+
+  info_file_handler:
+    class: mcc_logger.config_data.logging_services.LogDataFileHandler
+    formatter: default_formatter
+    level: INFO
+    filename: Logs/info.log
+    when: midnight
+    utc: False
+    backupCount: 365
+    filters: [info_filter]
+
+  error_console_handler:
+    class: logging.StreamHandler
+    formatter: default_formatter
+    level: WARNING
+    stream: "ext://sys.stderr"
+    filters: [error_filter]
+
+  error_file_handler:
+    class: logging.FileHandler
+    formatter: default_formatter
+    level: WARNING
+    filename: Logs/error.log
+    mode: a
+    filters: [error_filter]
+
+  nodata_error_console_handler:
+    class: logging.StreamHandler
+    formatter: nodata_formatter
+    level: WARNING
+    stream: "ext://sys.stderr"
+    filters: [nodata_filter]
+
+  nodata_error_file_handler:
+    class: logging.FileHandler
+    formatter: nodata_formatter
+    level: WARNING
+    filename: Logs/error.log
+    mode: a
+    filters: [nodata_filter]
+
+
+
+loggers:
+  services.satellite:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  services.ground_station:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  services.communication:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  orbitron:
+    level: INFO
+    handlers: [info_file_handler, error_file_handler]
+
+  __main__:
+    level: INFO
+    handlers: [
+      logdata_console_handler, info_console_handler, error_console_handler, 
+      logdata_file_handler, info_file_handler, error_file_handler, 
+      logdata_influxdb_handler
+    ]
+
+  comm_support:
+    level: INFO
+    handlers: [
+      logdata_console_handler, info_console_handler, nodata_error_console_handler, error_console_handler, 
+      logdata_file_handler, info_file_handler, nodata_error_file_handler, error_file_handler, 
+      logdata_influxdb_handler
+    ]
+
+  icom_and_rotor_tcp_server:
+    level: INFO
+    handlers: [
+      logdata_console_handler, info_console_handler, error_console_handler, 
+      logdata_file_handler, info_file_handler, error_file_handler, 
+      logdata_influxdb_handler
+    ]

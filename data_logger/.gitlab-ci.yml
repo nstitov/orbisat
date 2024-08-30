@@ -1,0 +1,28 @@
+stages:
+    - deploy
+
+deploy-job:
+    image: git.volgaspace.org:5050/samsatlab/gittemplates/sshclient:0-1-1-druft
+    stage: deploy
+    only:
+        - deploy
+    variables:
+        GIT_SUBMODULE_STRATEGY: recursive
+        SSH_DEPLOY_HOST: gitlabdeploy@192.168.100.89
+        SSH_DEPLOY_PATH: ~/mcc_logger
+        CONTAINER_NAME: mcc-logger
+        CONTAINER_PORT: 6492
+        ENV_SERVER: .env.server
+
+    before_script:
+        - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        - chmod 600 ~/.ssh/id_rsa
+        - echo "$SSH_KNOWN_HOST" > ~/.ssh/known_hosts
+        - chmod 644 ~/.ssh/known_hosts
+    script:
+        - rsync -av -e ssh --exclude='*.git*' . $SSH_DEPLOY_HOST:$SSH_DEPLOY_PATH
+        - ssh $SSH_DEPLOY_HOST "cd $SSH_DEPLOY_PATH/config_data && echo influxdb_token=$INFLUXDB_TOKEN >> $ENV_SERVER"
+        - ssh $SSH_DEPLOY_HOST "cd .."
+        - ssh $SSH_DEPLOY_HOST "cd $SSH_DEPLOY_PATH && chmod +x deploy_script.sh && ./deploy_script.sh $CONTAINER_NAME $CONTAINER_PORT"
+    after_script:
+        - rm -rf ~/.ssh

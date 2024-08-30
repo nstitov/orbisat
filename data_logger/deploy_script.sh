@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CONTAINER_NAME=$1
+CONTAINER_PORT=$2
+
+docker build -t $CONTAINER_NAME .
+CONTAINER_EXISTS=$(docker ps -a -q -f name=$CONTAINER_NAME)
+if [ -n $CONTAINER_EXISTS ]; then
+docker rm -f $CONTAINER_NAME
+fi
+docker run -dp $CONTAINER_PORT:$CONTAINER_PORT --name $CONTAINER_NAME $CONTAINER_NAME
