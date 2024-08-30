@@ -15,7 +15,7 @@ FROM python:3.11-slim-bullseye
 COPY --from=compile-image /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
-COPY orbitron_server_runner.py .
+COPY orbisat_server_runner.py .
 WORKDIR /app
-COPY . /app/new_orbitron
-CMD ["python", "-u", "/app/orbitron_server_runner.py"]
+COPY . /app/orbisat
+CMD ["python", "-u", "/app/orbisat_server_runner.py"]

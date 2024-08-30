@@ -11,7 +11,7 @@ formatters:
 
 filters:
   info_filter:
-    (): new_orbitron.info_logger.logging_services.custom_filters.InfoLogFilter
+    (): orbisat.info_logger.logging_services.custom_filters.InfoLogFilter
 
 
 handlers:
@@ -28,10 +28,10 @@ handlers:
     stream: "ext://sys.stderr"
 
   info_file_handler:
-    class: new_orbitron.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
+    class: orbisat.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
     formatter: default_formatter
     level: INFO
-    filename: Logs/orbitron_info.log
+    filename: Logs/orbisat_info.log
     when: midnight
     utc: False
     backupCount: 365
@@ -41,69 +41,69 @@ handlers:
     class: logging.FileHandler
     formatter: default_formatter
     level: WARNING
-    filename: Logs/orbitron_errors.log
+    filename: Logs/orbisat_errors.log
     mode: a
 
-  orbitron_gui_info_file_handler:
-    class: new_orbitron.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
+  orbisat_gui_info_file_handler:
+    class: orbisat.info_logger.logging_services.custom_handlers.LogRotatiingFileHandler
     formatter: default_formatter
     level: DEBUG
-    filename: Logs/orbitron_gui_info.log
+    filename: Logs/orbisat_gui_info.log
     when: midnight
     utc: False
     backupCount: 365
     filters: [info_filter]
 
-  orbitron_gui_error_file_handler:
+  orbisat_gui_error_file_handler:
     class: logging.FileHandler
     formatter: default_formatter
     level: WARNING
-    filename: Logs/orbitron_gui_errors.log
+    filename: Logs/orbisat_gui_errors.log
     mode: a
 
 
 
 loggers:
-  new_orbitron.orbitron_main.orbitron:
+  orbisat.orbisat_main.orbisat:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.tcp.TcpServerABC:
+  orbisat.tcp.TcpServerABC:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.tcp.orbitron_tcp_server:
+  orbisat.tcp.orbisat_tcp_server:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.tcp.orbitron_tcp_client:
+  orbisat.tcp.orbisat_tcp_client:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.orbitron_services.satellite:
+  orbisat.orbisat_services.satellite:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.orbitron_services.ground_station:
+  orbisat.orbisat_services.ground_station:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.orbitron_services.communication:
+  orbisat.orbisat_services.communication:
     level: INFO
     handlers: [info_file_handler, error_file_handler]
 
-  new_orbitron.orbitron_gui.gui_main_full:
+  orbisat.orbisat_gui.gui_main_full:
     level: DEBUG
-    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+    handlers: [orbisat_gui_info_file_handler, orbisat_gui_error_file_handler]
 
-  new_orbitron.orbitron_gui.gui_main_short:
+  orbisat.orbisat_gui.gui_main_short:
     level: DEBUG
-    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+    handlers: [orbisat_gui_info_file_handler, orbisat_gui_error_file_handler]
 
-  new_orbitron.orbitron_gui.gui_station_setup:
+  orbisat.orbisat_gui.gui_station_setup:
     level: DEBUG
-    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+    handlers: [orbisat_gui_info_file_handler, orbisat_gui_error_file_handler]
 
-  new_orbitron.orbitron_gui.gui_choose_station:
+  orbisat.orbisat_gui.gui_choose_station:
     level: DEBUG
-    handlers: [orbitron_gui_info_file_handler, orbitron_gui_error_file_handler]
+    handlers: [orbisat_gui_info_file_handler, orbisat_gui_error_file_handler]

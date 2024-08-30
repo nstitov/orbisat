@@ -1,4 +1,4 @@
-#!/Users/nstitov/VolgaSpace/new_orbitron/venv/bin/python3.11
+#!/Users/nstitov/programming/orbisat/venv/bin/python3.11
 
 """Script to download and store satellite TLE data."""
 
