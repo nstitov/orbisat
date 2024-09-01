@@ -17,5 +17,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 WORKDIR /app
 COPY orbisat_server_runner.py .
 WORKDIR /app
-COPY . /app/orbisat
+COPY orbisat/ /app/orbisat
+EXPOSE 5555
 CMD ["python", "-u", "/app/orbisat_server_runner.py"]
