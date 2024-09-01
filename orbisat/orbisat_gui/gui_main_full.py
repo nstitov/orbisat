@@ -5,7 +5,7 @@ from math import degrees
 from typing import Iterable, Literal, Optional, Union
 
 from PyQt5 import QtCore, QtWidgets, uic
-from PyQt5.QtGui import QCloseEvent
+from PyQt5.QtGui import QCloseEvent, QFont
 
 from ..exceptions.tcp_exceptions import (
     TCPServerResponseError,
@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 class OrbisatWindow(Ui_MainWindow, QtWidgets.QMainWindow):
     """Class used to represent GUI for interaction with OrbiSat TCP Server."""
 
-    PROGRAM_NAME = "Orbiter"
+    PROGRAM_NAME = "OrbiSat"
     MAIN_WINDOW_UI_NAME = "main_window_full.ui"
 
     _MAIN_WINDOW_HEIGHT = 450
