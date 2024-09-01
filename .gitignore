@@ -1,6 +1,7 @@
 tle/
 tests/
 Logs/
+pyqt_venv/
 
 time_sessions.txt
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'new_orbitron/orbitron_gui/ui/main_window_full.ui'
+# Form implementation generated from reading ui file 'main_window_full.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -15,9 +15,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(774, 449)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
@@ -28,70 +26,54 @@ class Ui_MainWindow(object):
         self.radar_widget.setGeometry(QtCore.QRect(5, 5, 410, 410))
         self.radar_widget.setObjectName("radar_widget")
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(420, 100, 171, 33))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(420, 100, 172, 33))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.satellite_info_layout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.satellite_info_layout.setContentsMargins(0, 0, 0, 0)
         self.satellite_info_layout.setVerticalSpacing(1)
         self.satellite_info_layout.setObjectName("satellite_info_layout")
         self.tle_date_label = QtWidgets.QLabel(self.gridLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.tle_date_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.tle_date_label.sizePolicy().hasHeightForWidth())
         self.tle_date_label.setSizePolicy(sizePolicy)
         self.tle_date_label.setMinimumSize(QtCore.QSize(80, 15))
         self.tle_date_label.setMaximumSize(QtCore.QSize(80, 15))
         self.tle_date_label.setObjectName("tle_date_label")
         self.satellite_info_layout.addWidget(self.tle_date_label, 1, 1, 1, 1)
         self.norad_id_text_label = QtWidgets.QLabel(self.gridLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.norad_id_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.norad_id_text_label.sizePolicy().hasHeightForWidth())
         self.norad_id_text_label.setSizePolicy(sizePolicy)
         self.norad_id_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.norad_id_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.norad_id_text_label.setObjectName("norad_id_text_label")
         self.satellite_info_layout.addWidget(self.norad_id_text_label, 0, 0, 1, 1)
         self.tle_date_text_label = QtWidgets.QLabel(self.gridLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.tle_date_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.tle_date_text_label.sizePolicy().hasHeightForWidth())
         self.tle_date_text_label.setSizePolicy(sizePolicy)
         self.tle_date_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.tle_date_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.tle_date_text_label.setObjectName("tle_date_text_label")
         self.satellite_info_layout.addWidget(self.tle_date_text_label, 1, 0, 1, 1)
         self.norad_id_label = QtWidgets.QLabel(self.gridLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.norad_id_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.norad_id_label.sizePolicy().hasHeightForWidth())
         self.norad_id_label.setSizePolicy(sizePolicy)
         self.norad_id_label.setMinimumSize(QtCore.QSize(80, 15))
         self.norad_id_label.setMaximumSize(QtCore.QSize(80, 15))
         self.norad_id_label.setObjectName("norad_id_label")
         self.satellite_info_layout.addWidget(self.norad_id_label, 0, 1, 1, 1)
         self.gridLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(420, 130, 171, 65))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(420, 130, 172, 65))
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
         self.session_params_layout = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
         self.session_params_layout.setSizeConstraint(QtWidgets.QLayout.SetMinimumSize)
@@ -99,93 +81,67 @@ class Ui_MainWindow(object):
         self.session_params_layout.setVerticalSpacing(1)
         self.session_params_layout.setObjectName("session_params_layout")
         self.azimuth_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.azimuth_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.azimuth_label.sizePolicy().hasHeightForWidth())
         self.azimuth_label.setSizePolicy(sizePolicy)
         self.azimuth_label.setMinimumSize(QtCore.QSize(80, 15))
         self.azimuth_label.setMaximumSize(QtCore.QSize(80, 15))
         self.azimuth_label.setObjectName("azimuth_label")
         self.session_params_layout.addWidget(self.azimuth_label, 0, 1, 1, 1)
         self.elevation_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.elevation_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.elevation_label.sizePolicy().hasHeightForWidth())
         self.elevation_label.setSizePolicy(sizePolicy)
         self.elevation_label.setMinimumSize(QtCore.QSize(80, 15))
         self.elevation_label.setMaximumSize(QtCore.QSize(80, 15))
         self.elevation_label.setObjectName("elevation_label")
         self.session_params_layout.addWidget(self.elevation_label, 1, 1, 1, 1)
         self.downlink_text_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.downlink_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.downlink_text_label.sizePolicy().hasHeightForWidth())
         self.downlink_text_label.setSizePolicy(sizePolicy)
         self.downlink_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.downlink_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.downlink_text_label.setObjectName("downlink_text_label")
         self.session_params_layout.addWidget(self.downlink_text_label, 3, 0, 1, 1)
         self.azimuth_text_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.azimuth_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.azimuth_text_label.sizePolicy().hasHeightForWidth())
         self.azimuth_text_label.setSizePolicy(sizePolicy)
         self.azimuth_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.azimuth_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.azimuth_text_label.setObjectName("azimuth_text_label")
         self.session_params_layout.addWidget(self.azimuth_text_label, 0, 0, 1, 1)
         self.downlink_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.downlink_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.downlink_label.sizePolicy().hasHeightForWidth())
         self.downlink_label.setSizePolicy(sizePolicy)
         self.downlink_label.setMinimumSize(QtCore.QSize(80, 15))
         self.downlink_label.setMaximumSize(QtCore.QSize(80, 15))
         self.downlink_label.setObjectName("downlink_label")
         self.session_params_layout.addWidget(self.downlink_label, 3, 1, 1, 1)
         self.elevation_text_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.elevation_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.elevation_text_label.sizePolicy().hasHeightForWidth())
         self.elevation_text_label.setSizePolicy(sizePolicy)
         self.elevation_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.elevation_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.elevation_text_label.setObjectName("elevation_text_label")
         self.session_params_layout.addWidget(self.elevation_text_label, 1, 0, 1, 1)
         self.uplink_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.uplink_label.sizePolicy().hasHeightForWidth())
@@ -195,110 +151,82 @@ class Ui_MainWindow(object):
         self.uplink_label.setObjectName("uplink_label")
         self.session_params_layout.addWidget(self.uplink_label, 2, 1, 1, 1)
         self.uplink_text_label = QtWidgets.QLabel(self.gridLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.uplink_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.uplink_text_label.sizePolicy().hasHeightForWidth())
         self.uplink_text_label.setSizePolicy(sizePolicy)
         self.uplink_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.uplink_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.uplink_text_label.setObjectName("uplink_text_label")
         self.session_params_layout.addWidget(self.uplink_text_label, 2, 0, 1, 1)
         self.gridLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(420, 200, 171, 41))
+        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(420, 200, 172, 41))
         self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
         self.set_freqs_layout = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
         self.set_freqs_layout.setContentsMargins(0, 0, 0, 0)
         self.set_freqs_layout.setVerticalSpacing(1)
         self.set_freqs_layout.setObjectName("set_freqs_layout")
         self.set_uplink_text_label = QtWidgets.QLabel(self.gridLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.set_uplink_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.set_uplink_text_label.sizePolicy().hasHeightForWidth())
         self.set_uplink_text_label.setSizePolicy(sizePolicy)
         self.set_uplink_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.set_uplink_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.set_uplink_text_label.setObjectName("set_uplink_text_label")
         self.set_freqs_layout.addWidget(self.set_uplink_text_label, 0, 0, 1, 1)
         self.set_downlink_text_label = QtWidgets.QLabel(self.gridLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.set_downlink_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.set_downlink_text_label.sizePolicy().hasHeightForWidth())
         self.set_downlink_text_label.setSizePolicy(sizePolicy)
         self.set_downlink_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.set_downlink_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.set_downlink_text_label.setObjectName("set_downlink_text_label")
         self.set_freqs_layout.addWidget(self.set_downlink_text_label, 1, 0, 1, 1)
         self.set_uplink_lineedit = QtWidgets.QLineEdit(self.gridLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.set_uplink_lineedit.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.set_uplink_lineedit.sizePolicy().hasHeightForWidth())
         self.set_uplink_lineedit.setSizePolicy(sizePolicy)
         self.set_uplink_lineedit.setMinimumSize(QtCore.QSize(80, 15))
         self.set_uplink_lineedit.setMaximumSize(QtCore.QSize(80, 15))
         self.set_uplink_lineedit.setObjectName("set_uplink_lineedit")
         self.set_freqs_layout.addWidget(self.set_uplink_lineedit, 0, 1, 1, 1)
         self.set_downlink_lineedit = QtWidgets.QLineEdit(self.gridLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.set_downlink_lineedit.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.set_downlink_lineedit.sizePolicy().hasHeightForWidth())
         self.set_downlink_lineedit.setSizePolicy(sizePolicy)
         self.set_downlink_lineedit.setMinimumSize(QtCore.QSize(80, 15))
         self.set_downlink_lineedit.setMaximumSize(QtCore.QSize(80, 15))
         self.set_downlink_lineedit.setObjectName("set_downlink_lineedit")
         self.set_freqs_layout.addWidget(self.set_downlink_lineedit, 1, 1, 1, 1)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(420, 0, 171, 21))
+        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(420, 0, 178, 21))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
         self.time_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
         self.time_layout.setContentsMargins(0, 0, 0, 0)
         self.time_layout.setObjectName("time_layout")
         self.time_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.time_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.time_text_label.sizePolicy().hasHeightForWidth())
         self.time_text_label.setSizePolicy(sizePolicy)
         self.time_text_label.setMinimumSize(QtCore.QSize(50, 15))
         self.time_text_label.setMaximumSize(QtCore.QSize(50, 15))
         self.time_text_label.setObjectName("time_text_label")
         self.time_layout.addWidget(self.time_text_label)
-        spacerItem = QtWidgets.QSpacerItem(
-            1, 15, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem = QtWidgets.QSpacerItem(1, 15, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         self.time_layout.addItem(spacerItem)
         self.time_label = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.time_label.sizePolicy().hasHeightForWidth())
@@ -314,23 +242,17 @@ class Ui_MainWindow(object):
         self.line_5.setObjectName("line_5")
         self.predict_button = QtWidgets.QPushButton(self.centralwidget)
         self.predict_button.setGeometry(QtCore.QRect(600, 150, 170, 40))
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.predict_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.predict_button.sizePolicy().hasHeightForWidth())
         self.predict_button.setSizePolicy(sizePolicy)
         self.predict_button.setMinimumSize(QtCore.QSize(170, 40))
         self.predict_button.setMaximumSize(QtCore.QSize(170, 40))
         self.predict_button.setObjectName("predict_button")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(420, 240, 350, 145))
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.groupBox.sizePolicy().hasHeightForWidth())
@@ -346,30 +268,20 @@ class Ui_MainWindow(object):
         self.groupBox.setObjectName("groupBox")
         self.sessions_scroll_area = QtWidgets.QScrollArea(self.groupBox)
         self.sessions_scroll_area.setGeometry(QtCore.QRect(0, 20, 350, 120))
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.sessions_scroll_area.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.sessions_scroll_area.sizePolicy().hasHeightForWidth())
         self.sessions_scroll_area.setSizePolicy(sizePolicy)
         self.sessions_scroll_area.setMinimumSize(QtCore.QSize(350, 120))
         self.sessions_scroll_area.setMaximumSize(QtCore.QSize(350, 120))
-        self.sessions_scroll_area.setVerticalScrollBarPolicy(
-            QtCore.Qt.ScrollBarAlwaysOn
-        )
-        self.sessions_scroll_area.setHorizontalScrollBarPolicy(
-            QtCore.Qt.ScrollBarAlwaysOff
-        )
+        self.sessions_scroll_area.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.sessions_scroll_area.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
         self.sessions_scroll_area.setWidgetResizable(True)
-        self.sessions_scroll_area.setAlignment(
-            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop
-        )
+        self.sessions_scroll_area.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
         self.sessions_scroll_area.setObjectName("sessions_scroll_area")
         self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 331, 118))
+        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 332, 118))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.sessions_scroll_area.setWidget(self.scrollAreaWidgetContents_2)
         self.horizontalLayoutWidget = QtWidgets.QWidget(self.groupBox)
@@ -379,19 +291,13 @@ class Ui_MainWindow(object):
         self.sessions_info_layout.setContentsMargins(0, 0, 0, 0)
         self.sessions_info_layout.setSpacing(0)
         self.sessions_info_layout.setObjectName("sessions_info_layout")
-        spacerItem1 = QtWidgets.QSpacerItem(
-            5, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem1 = QtWidgets.QSpacerItem(5, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem1)
         self.session_time_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.session_time_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.session_time_text_label.sizePolicy().hasHeightForWidth())
         self.session_time_text_label.setSizePolicy(sizePolicy)
         self.session_time_text_label.setMinimumSize(QtCore.QSize(110, 20))
         self.session_time_text_label.setMaximumSize(QtCore.QSize(110, 20))
@@ -401,19 +307,13 @@ class Ui_MainWindow(object):
         self.session_time_text_label.setFont(font)
         self.session_time_text_label.setObjectName("session_time_text_label")
         self.sessions_info_layout.addWidget(self.session_time_text_label)
-        spacerItem2 = QtWidgets.QSpacerItem(
-            30, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem2 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem2)
         self.azimuth_session_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.azimuth_session_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.azimuth_session_text_label.sizePolicy().hasHeightForWidth())
         self.azimuth_session_text_label.setSizePolicy(sizePolicy)
         self.azimuth_session_text_label.setMinimumSize(QtCore.QSize(30, 20))
         self.azimuth_session_text_label.setMaximumSize(QtCore.QSize(30, 20))
@@ -424,21 +324,13 @@ class Ui_MainWindow(object):
         self.azimuth_session_text_label.setAlignment(QtCore.Qt.AlignCenter)
         self.azimuth_session_text_label.setObjectName("azimuth_session_text_label")
         self.sessions_info_layout.addWidget(self.azimuth_session_text_label)
-        spacerItem3 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem3 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem3)
-        self.elevation_session_text_label = QtWidgets.QLabel(
-            self.horizontalLayoutWidget
-        )
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        self.elevation_session_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.elevation_session_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.elevation_session_text_label.sizePolicy().hasHeightForWidth())
         self.elevation_session_text_label.setSizePolicy(sizePolicy)
         self.elevation_session_text_label.setMinimumSize(QtCore.QSize(30, 20))
         self.elevation_session_text_label.setMaximumSize(QtCore.QSize(30, 20))
@@ -449,19 +341,13 @@ class Ui_MainWindow(object):
         self.elevation_session_text_label.setAlignment(QtCore.Qt.AlignCenter)
         self.elevation_session_text_label.setObjectName("elevation_session_text_label")
         self.sessions_info_layout.addWidget(self.elevation_session_text_label)
-        spacerItem4 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem4 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem4)
         self.sun_azimuth_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.sun_azimuth_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.sun_azimuth_text_label.sizePolicy().hasHeightForWidth())
         self.sun_azimuth_text_label.setSizePolicy(sizePolicy)
         self.sun_azimuth_text_label.setMinimumSize(QtCore.QSize(30, 20))
         self.sun_azimuth_text_label.setMaximumSize(QtCore.QSize(30, 20))
@@ -472,19 +358,13 @@ class Ui_MainWindow(object):
         self.sun_azimuth_text_label.setAlignment(QtCore.Qt.AlignCenter)
         self.sun_azimuth_text_label.setObjectName("sun_azimuth_text_label")
         self.sessions_info_layout.addWidget(self.sun_azimuth_text_label)
-        spacerItem5 = QtWidgets.QSpacerItem(
-            20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem5 = QtWidgets.QSpacerItem(20, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem5)
         self.sun_elevation_text_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.sun_elevation_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.sun_elevation_text_label.sizePolicy().hasHeightForWidth())
         self.sun_elevation_text_label.setSizePolicy(sizePolicy)
         self.sun_elevation_text_label.setMinimumSize(QtCore.QSize(30, 20))
         self.sun_elevation_text_label.setMaximumSize(QtCore.QSize(30, 20))
@@ -495,9 +375,7 @@ class Ui_MainWindow(object):
         self.sun_elevation_text_label.setAlignment(QtCore.Qt.AlignCenter)
         self.sun_elevation_text_label.setObjectName("sun_elevation_text_label")
         self.sessions_info_layout.addWidget(self.sun_elevation_text_label)
-        spacerItem6 = QtWidgets.QSpacerItem(
-            25, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
-        )
+        spacerItem6 = QtWidgets.QSpacerItem(25, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.sessions_info_layout.addItem(spacerItem6)
         self.line_8 = QtWidgets.QFrame(self.centralwidget)
         self.line_8.setGeometry(QtCore.QRect(595, 135, 175, 20))
@@ -507,49 +385,35 @@ class Ui_MainWindow(object):
         self.horizontalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
         self.horizontalLayoutWidget_3.setGeometry(QtCore.QRect(420, 380, 351, 32))
         self.horizontalLayoutWidget_3.setObjectName("horizontalLayoutWidget_3")
-        self.seesions_button_layout = QtWidgets.QHBoxLayout(
-            self.horizontalLayoutWidget_3
-        )
+        self.seesions_button_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_3)
         self.seesions_button_layout.setContentsMargins(0, 0, 0, 0)
         self.seesions_button_layout.setSpacing(0)
         self.seesions_button_layout.setObjectName("seesions_button_layout")
         self.prev_session_button = QtWidgets.QPushButton(self.horizontalLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.prev_session_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.prev_session_button.sizePolicy().hasHeightForWidth())
         self.prev_session_button.setSizePolicy(sizePolicy)
         self.prev_session_button.setMinimumSize(QtCore.QSize(115, 30))
         self.prev_session_button.setMaximumSize(QtCore.QSize(115, 30))
         self.prev_session_button.setObjectName("prev_session_button")
         self.seesions_button_layout.addWidget(self.prev_session_button)
         self.clear_session_button = QtWidgets.QPushButton(self.horizontalLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.clear_session_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.clear_session_button.sizePolicy().hasHeightForWidth())
         self.clear_session_button.setSizePolicy(sizePolicy)
         self.clear_session_button.setMinimumSize(QtCore.QSize(115, 30))
         self.clear_session_button.setMaximumSize(QtCore.QSize(115, 30))
         self.clear_session_button.setObjectName("clear_session_button")
         self.seesions_button_layout.addWidget(self.clear_session_button)
         self.next_session_button = QtWidgets.QPushButton(self.horizontalLayoutWidget_3)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.next_session_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.next_session_button.sizePolicy().hasHeightForWidth())
         self.next_session_button.setSizePolicy(sizePolicy)
         self.next_session_button.setMinimumSize(QtCore.QSize(115, 30))
         self.next_session_button.setMaximumSize(QtCore.QSize(115, 30))
@@ -562,110 +426,74 @@ class Ui_MainWindow(object):
         self.norad_id_layout.setContentsMargins(0, 0, 0, 0)
         self.norad_id_layout.setSpacing(0)
         self.norad_id_layout.setObjectName("norad_id_layout")
-        self.orbitron_norad_id_text_label = QtWidgets.QLabel(
-            self.verticalLayoutWidget_2
-        )
-        self.orbitron_norad_id_text_label.setMinimumSize(QtCore.QSize(80, 15))
-        self.orbitron_norad_id_text_label.setMaximumSize(QtCore.QSize(80, 15))
-        self.orbitron_norad_id_text_label.setObjectName("orbitron_norad_id_text_label")
-        self.norad_id_layout.addWidget(self.orbitron_norad_id_text_label)
-        self.orbitron_norad_ids_scroll_area = QtWidgets.QScrollArea(
-            self.verticalLayoutWidget_2
-        )
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        self.orbisat_norad_id_text_label = QtWidgets.QLabel(self.verticalLayoutWidget_2)
+        self.orbisat_norad_id_text_label.setMinimumSize(QtCore.QSize(80, 15))
+        self.orbisat_norad_id_text_label.setMaximumSize(QtCore.QSize(80, 15))
+        self.orbisat_norad_id_text_label.setObjectName("orbisat_norad_id_text_label")
+        self.norad_id_layout.addWidget(self.orbisat_norad_id_text_label)
+        self.orbisat_norad_ids_scroll_area = QtWidgets.QScrollArea(self.verticalLayoutWidget_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.orbitron_norad_ids_scroll_area.sizePolicy().hasHeightForWidth()
-        )
-        self.orbitron_norad_ids_scroll_area.setSizePolicy(sizePolicy)
-        self.orbitron_norad_ids_scroll_area.setMinimumSize(QtCore.QSize(80, 120))
-        self.orbitron_norad_ids_scroll_area.setMaximumSize(QtCore.QSize(80, 120))
-        self.orbitron_norad_ids_scroll_area.setVerticalScrollBarPolicy(
-            QtCore.Qt.ScrollBarAlwaysOn
-        )
-        self.orbitron_norad_ids_scroll_area.setHorizontalScrollBarPolicy(
-            QtCore.Qt.ScrollBarAlwaysOff
-        )
-        self.orbitron_norad_ids_scroll_area.setWidgetResizable(True)
-        self.orbitron_norad_ids_scroll_area.setAlignment(
-            QtCore.Qt.AlignLeading | QtCore.Qt.AlignLeft | QtCore.Qt.AlignTop
-        )
-        self.orbitron_norad_ids_scroll_area.setObjectName(
-            "orbitron_norad_ids_scroll_area"
-        )
+        sizePolicy.setHeightForWidth(self.orbisat_norad_ids_scroll_area.sizePolicy().hasHeightForWidth())
+        self.orbisat_norad_ids_scroll_area.setSizePolicy(sizePolicy)
+        self.orbisat_norad_ids_scroll_area.setMinimumSize(QtCore.QSize(80, 120))
+        self.orbisat_norad_ids_scroll_area.setMaximumSize(QtCore.QSize(80, 120))
+        self.orbisat_norad_ids_scroll_area.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.orbisat_norad_ids_scroll_area.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.orbisat_norad_ids_scroll_area.setWidgetResizable(True)
+        self.orbisat_norad_ids_scroll_area.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.orbisat_norad_ids_scroll_area.setObjectName("orbisat_norad_ids_scroll_area")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 61, 118))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 62, 118))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
-        self.orbitron_norad_ids_scroll_area.setWidget(self.scrollAreaWidgetContents)
-        self.norad_id_layout.addWidget(self.orbitron_norad_ids_scroll_area)
+        self.orbisat_norad_ids_scroll_area.setWidget(self.scrollAreaWidgetContents)
+        self.norad_id_layout.addWidget(self.orbisat_norad_ids_scroll_area)
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(690, 0, 81, 141))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(690, 0, 87, 141))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.add_new_tle_layout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.add_new_tle_layout.setContentsMargins(0, 0, 0, 0)
         self.add_new_tle_layout.setSpacing(0)
         self.add_new_tle_layout.setObjectName("add_new_tle_layout")
-        spacerItem7 = QtWidgets.QSpacerItem(
-            10, 5, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
-        )
+        spacerItem7 = QtWidgets.QSpacerItem(10, 5, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.add_new_tle_layout.addItem(spacerItem7)
         self.tle_file_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.tle_file_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.tle_file_button.sizePolicy().hasHeightForWidth())
         self.tle_file_button.setSizePolicy(sizePolicy)
         self.tle_file_button.setMinimumSize(QtCore.QSize(75, 25))
         self.tle_file_button.setMaximumSize(QtCore.QSize(75, 25))
         self.tle_file_button.setObjectName("tle_file_button")
         self.add_new_tle_layout.addWidget(self.tle_file_button)
         self.tle_norad_id_text_label = QtWidgets.QLabel(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.tle_norad_id_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.tle_norad_id_text_label.sizePolicy().hasHeightForWidth())
         self.tle_norad_id_text_label.setSizePolicy(sizePolicy)
         self.tle_norad_id_text_label.setMinimumSize(QtCore.QSize(75, 15))
         self.tle_norad_id_text_label.setMaximumSize(QtCore.QSize(75, 15))
         self.tle_norad_id_text_label.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.tle_norad_id_text_label.setObjectName("tle_norad_id_text_label")
         self.add_new_tle_layout.addWidget(self.tle_norad_id_text_label)
-        self.spacetrack_norad_id_lineedit = QtWidgets.QLineEdit(
-            self.verticalLayoutWidget
-        )
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        self.spacetrack_norad_id_lineedit = QtWidgets.QLineEdit(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.spacetrack_norad_id_lineedit.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.spacetrack_norad_id_lineedit.sizePolicy().hasHeightForWidth())
         self.spacetrack_norad_id_lineedit.setSizePolicy(sizePolicy)
         self.spacetrack_norad_id_lineedit.setMinimumSize(QtCore.QSize(75, 20))
         self.spacetrack_norad_id_lineedit.setMaximumSize(QtCore.QSize(75, 20))
         self.spacetrack_norad_id_lineedit.setObjectName("spacetrack_norad_id_lineedit")
         self.add_new_tle_layout.addWidget(self.spacetrack_norad_id_lineedit)
         self.tle_spacetrack_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.tle_spacetrack_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.tle_spacetrack_button.sizePolicy().hasHeightForWidth())
         self.tle_spacetrack_button.setSizePolicy(sizePolicy)
         self.tle_spacetrack_button.setMinimumSize(QtCore.QSize(75, 55))
         self.tle_spacetrack_button.setMaximumSize(QtCore.QSize(75, 75))
@@ -677,63 +505,47 @@ class Ui_MainWindow(object):
         self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_6.setObjectName("line_6")
         self.gridLayoutWidget_4 = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget_4.setGeometry(QtCore.QRect(420, 20, 171, 81))
+        self.gridLayoutWidget_4.setGeometry(QtCore.QRect(420, 20, 172, 83))
         self.gridLayoutWidget_4.setObjectName("gridLayoutWidget_4")
         self.station_info_layout = QtWidgets.QGridLayout(self.gridLayoutWidget_4)
         self.station_info_layout.setContentsMargins(0, 0, 0, 0)
         self.station_info_layout.setVerticalSpacing(1)
         self.station_info_layout.setObjectName("station_info_layout")
         self.station_name_text_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.station_name_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.station_name_text_label.sizePolicy().hasHeightForWidth())
         self.station_name_text_label.setSizePolicy(sizePolicy)
         self.station_name_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.station_name_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.station_name_text_label.setObjectName("station_name_text_label")
         self.station_info_layout.addWidget(self.station_name_text_label, 0, 0, 1, 1)
         self.latitude_text_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.latitude_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.latitude_text_label.sizePolicy().hasHeightForWidth())
         self.latitude_text_label.setSizePolicy(sizePolicy)
         self.latitude_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.latitude_text_label.setMaximumSize(QtCore.QSize(80, 15))
         self.latitude_text_label.setObjectName("latitude_text_label")
         self.station_info_layout.addWidget(self.latitude_text_label, 2, 0, 1, 1)
         self.station_name_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.station_name_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.station_name_label.sizePolicy().hasHeightForWidth())
         self.station_name_label.setSizePolicy(sizePolicy)
         self.station_name_label.setMinimumSize(QtCore.QSize(80, 15))
         self.station_name_label.setMaximumSize(QtCore.QSize(80, 15))
         self.station_name_label.setObjectName("station_name_label")
         self.station_info_layout.addWidget(self.station_name_label, 0, 1, 1, 1)
         self.longitude_text_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.longitude_text_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.longitude_text_label.sizePolicy().hasHeightForWidth())
         self.longitude_text_label.setSizePolicy(sizePolicy)
         self.longitude_text_label.setMinimumSize(QtCore.QSize(80, 15))
         self.longitude_text_label.setMaximumSize(QtCore.QSize(80, 15))
@@ -743,28 +555,20 @@ class Ui_MainWindow(object):
         self.altitude_text_label.setObjectName("altitude_text_label")
         self.station_info_layout.addWidget(self.altitude_text_label, 3, 0, 1, 1)
         self.latitude_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.latitude_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.latitude_label.sizePolicy().hasHeightForWidth())
         self.latitude_label.setSizePolicy(sizePolicy)
         self.latitude_label.setMinimumSize(QtCore.QSize(80, 15))
         self.latitude_label.setMaximumSize(QtCore.QSize(80, 15))
         self.latitude_label.setObjectName("latitude_label")
         self.station_info_layout.addWidget(self.latitude_label, 2, 1, 1, 1)
         self.longitude_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.longitude_label.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.longitude_label.sizePolicy().hasHeightForWidth())
         self.longitude_label.setSizePolicy(sizePolicy)
         self.longitude_label.setMinimumSize(QtCore.QSize(80, 15))
         self.longitude_label.setMaximumSize(QtCore.QSize(80, 15))
@@ -772,9 +576,7 @@ class Ui_MainWindow(object):
         self.station_info_layout.addWidget(self.longitude_label, 1, 1, 1, 1)
         self.station_elevation_text_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
         self.station_elevation_text_label.setObjectName("station_elevation_text_label")
-        self.station_info_layout.addWidget(
-            self.station_elevation_text_label, 4, 0, 1, 1
-        )
+        self.station_info_layout.addWidget(self.station_elevation_text_label, 4, 0, 1, 1)
         self.altitude_label = QtWidgets.QLabel(self.gridLayoutWidget_4)
         self.altitude_label.setObjectName("altitude_label")
         self.station_info_layout.addWidget(self.altitude_label, 3, 1, 1, 1)
@@ -793,14 +595,10 @@ class Ui_MainWindow(object):
         self.line_4.setObjectName("line_4")
         self.set_new_freqs_button = QtWidgets.QPushButton(self.centralwidget)
         self.set_new_freqs_button.setGeometry(QtCore.QRect(600, 200, 170, 35))
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(
-            self.set_new_freqs_button.sizePolicy().hasHeightForWidth()
-        )
+        sizePolicy.setHeightForWidth(self.set_new_freqs_button.sizePolicy().hasHeightForWidth())
         self.set_new_freqs_button.setSizePolicy(sizePolicy)
         self.set_new_freqs_button.setMinimumSize(QtCore.QSize(170, 35))
         self.set_new_freqs_button.setMaximumSize(QtCore.QSize(170, 30))
@@ -842,9 +640,7 @@ class Ui_MainWindow(object):
         self.line_2.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        sizePolicy = QtWidgets.QSizePolicy(
-            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed
-        )
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.statusbar.sizePolicy().hasHeightForWidth())
@@ -854,19 +650,15 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 774, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 774, 37))
         self.menubar.setObjectName("menubar")
         self.menu = QtWidgets.QMenu(self.menubar)
         self.menu.setObjectName("menu")
         MainWindow.setMenuBar(self.menubar)
         self.clear_station_data_menu_button = QtWidgets.QAction(MainWindow)
-        self.clear_station_data_menu_button.setObjectName(
-            "clear_station_data_menu_button"
-        )
+        self.clear_station_data_menu_button.setObjectName("clear_station_data_menu_button")
         self.show_station_parameters_menu_button = QtWidgets.QAction(MainWindow)
-        self.show_station_parameters_menu_button.setObjectName(
-            "show_station_parameters_menu_button"
-        )
+        self.show_station_parameters_menu_button.setObjectName("show_station_parameters_menu_button")
         self.change_station_menu_button = QtWidgets.QAction(MainWindow)
         self.change_station_menu_button.setObjectName("change_station_menu_button")
         self.menu.addAction(self.change_station_menu_button)
@@ -893,9 +685,7 @@ class Ui_MainWindow(object):
         self.uplink_label.setText(_translate("MainWindow", "None"))
         self.uplink_text_label.setText(_translate("MainWindow", "Uplink, [Hz]:"))
         self.set_uplink_text_label.setText(_translate("MainWindow", "Uplink, [Hz]:"))
-        self.set_downlink_text_label.setText(
-            _translate("MainWindow", "Downlink, [Hz]:")
-        )
+        self.set_downlink_text_label.setText(_translate("MainWindow", "Downlink, [Hz]:"))
         self.time_text_label.setText(_translate("MainWindow", "Time UTC:"))
         self.time_label.setText(_translate("MainWindow", "None"))
         self.predict_button.setText(_translate("MainWindow", "Predict"))
@@ -907,7 +697,7 @@ class Ui_MainWindow(object):
         self.prev_session_button.setText(_translate("MainWindow", "Show previous"))
         self.clear_session_button.setText(_translate("MainWindow", "Clear session"))
         self.next_session_button.setText(_translate("MainWindow", "Show next"))
-        self.orbitron_norad_id_text_label.setText(_translate("MainWindow", "NORAD ID"))
+        self.orbisat_norad_id_text_label.setText(_translate("MainWindow", "NORAD ID"))
         self.tle_file_button.setText(_translate("MainWindow", "TLE by file"))
         self.tle_norad_id_text_label.setText(_translate("MainWindow", "NORAD ID:"))
         self.tle_spacetrack_button.setText(_translate("MainWindow", "Spacetrack"))
@@ -918,24 +708,12 @@ class Ui_MainWindow(object):
         self.altitude_text_label.setText(_translate("MainWindow", "Altitude, [m]:"))
         self.latitude_label.setText(_translate("MainWindow", "None"))
         self.longitude_label.setText(_translate("MainWindow", "None"))
-        self.station_elevation_text_label.setText(
-            _translate("MainWindow", "Elevation, [°]:")
-        )
+        self.station_elevation_text_label.setText(_translate("MainWindow", "Elevation, [°]:"))
         self.altitude_label.setText(_translate("MainWindow", "TextLabel"))
         self.station_elevation_label.setText(_translate("MainWindow", "TextLabel"))
-        self.set_new_freqs_button.setText(
-            _translate("MainWindow", "Set new frequencies")
-        )
+        self.set_new_freqs_button.setText(_translate("MainWindow", "Set new frequencies"))
         self.menu.setTitle(_translate("MainWindow", "Station"))
-        self.clear_station_data_menu_button.setText(
-            _translate("MainWindow", "Clear station data")
-        )
-        self.show_station_parameters_menu_button.setText(
-            _translate("MainWindow", "Show station parameters")
-        )
-        self.change_station_menu_button.setText(
-            _translate("MainWindow", "Change station")
-        )
-
-
+        self.clear_station_data_menu_button.setText(_translate("MainWindow", "Clear station data"))
+        self.show_station_parameters_menu_button.setText(_translate("MainWindow", "Show station parameters"))
+        self.change_station_menu_button.setText(_translate("MainWindow", "Change station"))
 from orbisat.orbisat_gui.widgets.radar import OrbisatRadar
