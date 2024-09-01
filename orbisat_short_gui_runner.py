@@ -1,8 +1,8 @@
 """Script to run short version of GUI for satellite communication visualization.
-
-This script must be run *FROM OUTSIDE* the orbisat pack!
-
 To run with nonlocal OrbiSat TCP Server you should use your own HOST IP.
+
+Before running this script you should run orbisat_client_runner to add required data to
+server.
 """
 
 import sys

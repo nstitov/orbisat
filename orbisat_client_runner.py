@@ -1,9 +1,8 @@
 """Script to run OrbiSat TCP client.
-
-This script must be run *FROM OUTSIDE* the orbisat pack!
-This script should be run to add initial data to OrbiSat TCP server for SamSat-ION.
-
 To run with nonlocal OrbiSat TCP Server you should use your own HOST IP.
+
+This script should be run to add initial data to OrbiSat TCP server for SamSat-ION or to
+use short version of GUI.
 """
 
 from orbisat.tcp.orbisat_tcp_client import HOST, PORT, OrbisatTcpClient

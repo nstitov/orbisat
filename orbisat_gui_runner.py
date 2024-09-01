@@ -1,7 +1,4 @@
 """Script to run GUI for satellite communication visualization.
-
-This script must be run *FROM OUTSIDE* the orbisat pack!
-
 To run with nonlocal OrbiSat TCP Server you should use your own HOST IP.
 """
 
