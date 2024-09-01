@@ -40,6 +40,11 @@
      <height>259</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <layout class="QVBoxLayout" name="main_layout">
     <property name="spacing">
      <number>5</number>
@@ -66,9 +71,9 @@
       </property>
       <property name="font">
        <font>
-        <family>Open Sans</family>
-        <pointsize>10</pointsize>
-        <italic>true</italic>
+        <family>Geneva</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
        </font>
       </property>
       <property name="text">
@@ -95,6 +100,11 @@
         <width>300</width>
         <height>200</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
@@ -133,6 +143,11 @@
           <height>30</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Choose selected station</string>
         </property>
@@ -157,6 +172,11 @@
           <width>145</width>
           <height>30</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>Add new station</string>

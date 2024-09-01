@@ -20,7 +20,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="OrbitronRadar" name="radar_widget" native="true">
+   <widget class="OrbisatRadar" name="radar_widget" native="true">
     <property name="geometry">
      <rect>
       <x>5</x>
@@ -29,15 +29,25 @@
       <height>410</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
       <x>420</x>
       <y>30</y>
-      <width>171</width>
+      <width>172</width>
       <height>59</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <layout class="QGridLayout" name="satellite_info_layout">
      <property name="topMargin">
@@ -66,6 +76,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>NORAD ID:</string>
        </property>
@@ -90,6 +105,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>TLE date:</string>
@@ -116,6 +136,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -140,6 +165,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>Station name:</string>
@@ -166,6 +196,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -191,6 +226,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -203,9 +243,14 @@
      <rect>
       <x>600</x>
       <y>10</y>
-      <width>171</width>
+      <width>172</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <layout class="QGridLayout" name="session_params_layout">
      <property name="sizeConstraint">
@@ -234,6 +279,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -258,6 +308,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>None</string>
@@ -284,6 +339,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Downlink, [Hz]:</string>
        </property>
@@ -308,6 +368,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>Azimuth, [°]:</string>
@@ -334,6 +399,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -358,6 +428,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>Elevation, [°]:</string>
@@ -384,6 +459,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -409,6 +489,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Uplink, [Hz]:</string>
        </property>
@@ -421,9 +506,14 @@
      <rect>
       <x>420</x>
       <y>90</y>
-      <width>171</width>
+      <width>172</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <layout class="QGridLayout" name="set_freqs_layout">
      <property name="verticalSpacing">
@@ -448,6 +538,11 @@
          <width>80</width>
          <height>15</height>
         </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>Uplink, [Hz]:</string>
@@ -474,6 +569,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Downlink, [Hz]:</string>
        </property>
@@ -499,6 +599,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
      <item row="1" column="1">
@@ -521,6 +626,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
       </widget>
      </item>
     </layout>
@@ -530,9 +640,14 @@
      <rect>
       <x>420</x>
       <y>10</y>
-      <width>171</width>
+      <width>178</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <layout class="QHBoxLayout" name="time_layout">
      <item>
@@ -555,6 +670,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Time UTC:</string>
        </property>
@@ -562,6 +682,11 @@
      </item>
      <item>
       <spacer name="horizontalSpacer_5">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
        </property>
@@ -596,6 +721,11 @@
          <height>15</height>
         </size>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>None</string>
        </property>
@@ -611,6 +741,11 @@
       <width>351</width>
       <height>16</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -643,6 +778,11 @@
       <height>40</height>
      </size>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
     <property name="text">
      <string>Set new frequencies</string>
     </property>
@@ -667,6 +807,11 @@
       <width>16777215</width>
       <height>75</height>
      </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
@@ -698,6 +843,11 @@
       <width>350</width>
       <height>280</height>
      </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="contextMenuPolicy">
      <enum>Qt::NoContextMenu</enum>
@@ -744,6 +894,11 @@
        <height>260</height>
       </size>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <property name="verticalScrollBarPolicy">
       <enum>Qt::ScrollBarAlwaysOn</enum>
      </property>
@@ -761,7 +916,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>331</width>
+        <width>332</width>
         <height>258</height>
        </rect>
       </property>
@@ -776,12 +931,22 @@
        <height>22</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
      <layout class="QHBoxLayout" name="sessions_info_layout">
       <property name="spacing">
        <number>0</number>
       </property>
       <item>
        <spacer name="horizontalSpacer_7">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -818,6 +983,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -829,6 +995,11 @@
       </item>
       <item>
        <spacer name="horizontalSpacer">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -865,6 +1036,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -879,6 +1051,11 @@
       </item>
       <item>
        <spacer name="horizontalSpacer_4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -915,6 +1092,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -929,6 +1107,11 @@
       </item>
       <item>
        <spacer name="horizontalSpacer_2">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -965,6 +1148,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -979,6 +1163,11 @@
       </item>
       <item>
        <spacer name="horizontalSpacer_3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -1015,6 +1204,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>10</pointsize>
           <weight>50</weight>
           <bold>false</bold>
          </font>
@@ -1029,6 +1219,11 @@
       </item>
       <item>
        <spacer name="horizontalSpacer_6">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -1062,7 +1257,7 @@
      <x>0</x>
      <y>0</y>
      <width>775</width>
-     <height>21</height>
+     <height>37</height>
     </rect>
    </property>
   </widget>
@@ -1070,9 +1265,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>OrbitronRadar</class>
+   <class>OrbisatRadar</class>
    <extends>QWidget</extends>
-   <header>new_orbitron/orbitron_gui/widgets/radar</header>
+   <header>orbisat/orbisat_gui/widgets/radar</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

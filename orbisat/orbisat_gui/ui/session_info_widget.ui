@@ -83,6 +83,11 @@
         <height>15</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Time UTC</string>
       </property>
@@ -123,6 +128,11 @@
         <width>30</width>
         <height>15</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Az</string>
@@ -168,6 +178,11 @@
         <height>15</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>El</string>
       </property>
@@ -212,6 +227,11 @@
         <height>15</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>SunAz</string>
       </property>
@@ -255,6 +275,11 @@
         <width>30</width>
         <height>15</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>SunEl</string>
